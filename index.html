@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Assistant Nest Bridge</title>
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #1f1d1b;
+    --muted: #5f5a54;
+    --rule: #e2ddd6;
+    --accent: #8a5a2b;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16150f;
+      --fg: #ece7df;
+      --muted: #a29a8e;
+      --rule: #33302a;
+      --accent: #d3a072;
+      --card: #1e1c16;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding-block: 3rem;
+    padding-inline: 1.25rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 40rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .5rem; letter-spacing: -.01em; }
+  .sub { color: var(--muted); margin: 0 0 2rem; }
+  h2 { font-size: 1.05rem; margin: 2rem 0 .5rem; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: .35rem; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1.1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .875rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Home Assistant Nest Bridge</h1>
+  <p class="sub">A personal, non-commercial integration between Google Nest devices and a self-hosted Home Assistant instance.</p>
+
+  <div class="card">
+    <p style="margin:0">This application is used by a single individual to connect their own Google Nest cameras and doorbell to their own Home Assistant server, running on hardware in their home. It is not a product, it is not distributed, and it is not offered to other users.</p>
+  </div>
+
+  <h2>What it does</h2>
+  <p>Using Google's Smart Device Management API, the application reads device status and receives camera events so that Home Assistant can:</p>
+  <ul>
+    <li>display camera and doorbell status on a private dashboard</li>
+    <li>trigger household automations, such as a notification when a person is detected late at night</li>
+    <li>show a live camera stream on request</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>No data is collected, sold, shared, or transmitted to any third party. Everything stays on the owner's own hardware. See the <a href="privacy.html">privacy policy</a> for detail.</p>
+
+  <h2>Not affiliated with Google</h2>
+  <p>This is an independent personal project. It is not affiliated with, endorsed by, or sponsored by Google LLC. Google, Nest, and related marks are trademarks of Google LLC.</p>
+
+  <footer>
+    <p style="margin:0">Maintained by <a href="https://github.com/jimb01243uk">jimb01243uk</a> &middot; <a href="privacy.html">Privacy policy</a></p>
+  </footer>
+</main>
+</body>
+</html>

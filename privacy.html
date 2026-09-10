@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Home Assistant Nest Bridge</title>
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #1f1d1b;
+    --muted: #5f5a54;
+    --rule: #e2ddd6;
+    --accent: #8a5a2b;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16150f;
+      --fg: #ece7df;
+      --muted: #a29a8e;
+      --rule: #33302a;
+      --accent: #d3a072;
+      --card: #1e1c16;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding-block: 3rem;
+    padding-inline: 1.25rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 40rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .35rem; letter-spacing: -.01em; }
+  .sub { color: var(--muted); margin: 0 0 2rem; font-size: .9rem; }
+  h2 { font-size: 1.05rem; margin: 2rem 0 .5rem; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: .35rem; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1.1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .875rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="sub">Home Assistant Nest Bridge &middot; Last updated 10 September 2026</p>
+
+  <div class="card">
+    <p style="margin:0"><strong>Summary:</strong> this is a personal application used by one individual to connect their own Google Nest devices to their own Home Assistant server. No data is collected by anyone else, none is sold or shared, and nothing leaves the owner's own hardware.</p>
+  </div>
+
+  <h2>Who this covers</h2>
+  <p>This application is operated by a single private individual for their own household. It is non-commercial, is not distributed to others, and has no other users.</p>
+
+  <h2>What data is accessed</h2>
+  <p>With the account holder's explicit consent, the application accesses the following through Google's Smart Device Management API:</p>
+  <ul>
+    <li>device names, types and status for Nest cameras and doorbells on the account holder's own Google account</li>
+    <li>camera event notifications, such as motion, person, sound and doorbell press events</li>
+    <li>temporary camera live-stream URLs, generated on request</li>
+  </ul>
+  <p>The application requests only the <code>sdm.service</code> and <code>pubsub</code> scopes, which are the minimum needed for the above.</p>
+
+  <h2>How it is used</h2>
+  <p>Solely to display device status and trigger automations within the account holder's own private Home Assistant instance — for example, sending a notification to the account holder's own phone when a person is detected outside the house at night.</p>
+
+  <h2>Where it is stored</h2>
+  <p>All data is processed and stored on hardware owned by the account holder, on their private home network. There is no external server, no hosted service, and no cloud database operated by this application.</p>
+
+  <h2>What is not done</h2>
+  <ul>
+    <li>No data is sold, rented, or shared with any third party</li>
+    <li>No data is used for advertising, profiling, or marketing</li>
+    <li>No analytics, tracking, or telemetry is collected</li>
+    <li>No data is transferred to anyone other than the account holder</li>
+    <li>No human reads the data other than the account holder</li>
+  </ul>
+
+  <h2>Limited use</h2>
+  <p>This application's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Event data is retained only for as long as the account holder's Home Assistant instance is configured to keep it, and is deleted when they remove it. Access can be withdrawn at any time from the Google Account permissions page at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, which immediately and permanently revokes the application's access.</p>
+
+  <h2>Children's data</h2>
+  <p>This application is not directed at children and does not knowingly process data relating to children.</p>
+
+  <h2>Changes</h2>
+  <p>Any change to this policy will be published on this page with an updated date above.</p>
+
+  <h2>Contact</h2>
+  <p>Questions can be raised via the maintainer's GitHub profile at <a href="https://github.com/jimb01243uk">github.com/jimb01243uk</a>.</p>
+
+  <footer>
+    <p style="margin:0"><a href="index.html">&larr; Back</a> &middot; Not affiliated with, endorsed by, or sponsored by Google LLC.</p>
+  </footer>
+</main>
+</body>
+</html>
